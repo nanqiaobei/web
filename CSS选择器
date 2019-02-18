@@ -1,0 +1,15 @@
+“选择器”指明了{}中的“样式”的作用对象，也就是“样式”作用于网页中的哪些元素
+复制代码
+＊ ：           通用元素选择器，匹配任何元素                    * { margin:0; padding:0; }
+
+E  ：          标签选择器，匹配所有使用E标签的元素               p { color:green; }
+
+#.info和E.info: class选择器，匹配所有class属性中包含info的元素   .info { background:#ff0; }    p.info { background:blue; }
+
+##info和E#info  id选择器，匹配所有id属性等于footer的元素         #info { background:#ff0; }   p#info { background:#ff0; }
+
+#组合选择器
+#E,F         多元素选择器，同时匹配所有E元素或F元素，E和F之间用逗号分隔         div,p { color:#f00; }
+ #E F         后代元素选择器，匹配所有属于E元素后代的F元素，E和F之间用空格分隔    li a { font-weight:bold;
+ #E > F       子元素选择器，匹配所有E元素的子元素F                            div > p { color:#f00; }
+ #E + F       毗邻元素选择器，匹配所有紧随E元素之后的同级元素F                  div + p { color:#f00; }  
